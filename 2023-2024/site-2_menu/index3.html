@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: linear-gradient(to right, #ffad33, #f8f8f8);
+            color: #4c4c4c;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            position: relative;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: none;
+            position: absolute;
+            background-color: #333;
+        }
+
+        nav li {
+            display: inline;
+        }
+      
+
+        nav li:hover ul {
+            display: block;
+            padding: 0px;
+            margin-top: 10px;
+            
+        }
+
+        nav ul li {
+            display: block;
+            padding: 0px 20px 0px 0;;
+            margin: 20px 0px 20px 0;
+        }
+
+        nav ul li:hover {
+            background-color: #ffad33;
+            
+        }
+
+        
+
+         nav ul li a:hover {
+            color: rgb(189, 40, 90);
+        } 
+
+    
+    </style>
+    <title>Dropdown Menu</title>
+</head>
+<body>
+
+    <header>
+        <h1>Your Website Name</h1>
+    </header>
+
+    <nav>
+        <li><a href="#">Home</a>
+            <ul>
+                <li><a href="#">Kitchen</a></li>
+                <li><a href="#">Bathroom</a></li>
+                <li><a href="#">Garden</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About</a>
+        <ul>
+            <li><a href="#">Kitchen</a></li>
+            <li><a href="#">Bathroom</a></li>
+            <li><a href="#">Garden</a></li>
+        </ul>
+        </li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </nav>
+
+    <!-- Your content goes here -->
+
+</body>
+</html>
