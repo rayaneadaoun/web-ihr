@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-panier.css">
+    <title>Panier - Tech Store</title>
+</head>
+<body class="light">
+
+<header>
+    <h1>Panier</h1>
+</header>
+
+<div class="cart-items">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+            const cartItemsContainer = document.querySelector('.cart-items');
+    
+            cartItems.forEach(product => {
+                const cartItem = document.createElement('div');
+                cartItem.classList.add('cart-item');
+                cartItem.innerHTML = `
+                    <img src="${product.imageSrc}" alt="${product.name}">
+                    <h3>${product.name}</h3>
+                    <p class="price">${product.price}</p>
+                    <!-- Ajoutez d'autres détails du produit si nécessaire -->
+                `;
+                cartItemsContainer.appendChild(cartItem);
+            });
+        });
+    </script>
+    
+    
+</div>
+
+
+</body>
+</html>
